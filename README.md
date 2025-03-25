@@ -24,7 +24,7 @@ http://localhost:2322/api?q=amsterdam
 ```
 *For more details on the API check the Photon [github repository](https://github.com/komoot/photon).*
 
-
+# DO NOT USE COMPOSE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ## Build from git
 https://github.com/tonsnoei/photon-docker
