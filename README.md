@@ -15,9 +15,19 @@ The data volume is exposed as `/photon/photon_data` and can be mounted, this way
 
 ```bash
 docker build -t poton:2 .
+
+```
+Run in test mode
+
+```bash
 docker run --rm -v ./data:/photon/photon_data -p 2322:2322 -it poton:2
+```
+
+And production
+```bash
 docker run -v ./data:/photon/photon_data -p 2322:2322 -d --restart=unless-stopped poton:2
 ```
+
 
 ## Search
 
