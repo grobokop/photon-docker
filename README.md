@@ -14,7 +14,9 @@ The data volume is exposed as `/photon/photon_data` and can be mounted, this way
 ## With `docker run`
 
 ```bash
-docker run -p 2322:2322 -it tonsnoei/photon-geocoder:latest
+docker build -t poton:2 .
+docker run --rm -v ./data:/photon/photon_data -p 2322:2322 -it poton:2
+docker run -v ./data:/photon/photon_data -p 2322:2322 -d --restart=unless-stopped poton:2
 ```
 
 ## Search
