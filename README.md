@@ -32,7 +32,7 @@ docker run -v ./data:/photon/photon_data -p 2322:2322 -d --restart=unless-stoppe
 ## Search
 
 ```
-http://localhost:2322/api?q=amsterdam
+http://localhost:2322/api?q=sydney
 ```
 *For more details on the API check the Photon [github repository](https://github.com/komoot/photon).*
 
